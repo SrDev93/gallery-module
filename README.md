@@ -20,6 +20,6 @@ composer require srdev93/gallery-module
 
 then run:
 ```php
-php artisan module:migrate blogs
-php artisan module:enable blogs
+php artisan module:migrate gallery
+php artisan module:enable gallery
 ```
