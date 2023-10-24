@@ -12,7 +12,7 @@
 */
 use \Illuminate\Support\Facades\Route;
 
-Route::prefix('')->middleware('auth')->group(function() {
+Route::prefix('admin')->middleware('auth')->group(function() {
     Route::resource('gallery', 'GalleryController');
     Route::get('gallery-photo-destroy/{id}', 'GalleryController@photo_delete')->name('gallery-photo-destroy');
 });
